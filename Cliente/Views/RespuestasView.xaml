@@ -13,7 +13,6 @@
             </Border.Effect>
 
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="500">
-                <!-- Temporizador -->
                 <TextBlock Text="{Binding TiempoRestante}" 
                            FontSize="32" 
                            Foreground="#FFFF6B6B" 
@@ -39,7 +38,6 @@
                        Margin="0,0,0,15"
                        FontWeight="SemiBold"/>
 
-                <!-- Grid de opciones 2x2 -->
                 <ItemsControl ItemsSource="{Binding Pregunta.Opciones}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
@@ -97,7 +95,6 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <!-- Mensaje de Estado -->
                 <TextBlock Text="{Binding MensajeEstado}"
                            FontSize="18" 
                            Foreground="#FF00CC99"
@@ -107,7 +104,6 @@
                            TextAlignment="Center"
                            FontWeight="SemiBold"/>
 
-                <!-- Botón Enviar -->
                 <Button Content="Enviar Respuesta" 
                         Command="{Binding EnviarCommand}"
                         IsEnabled="{Binding Botones}"
